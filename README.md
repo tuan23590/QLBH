@@ -1,3 +1,5 @@
+Quản lý bảo linh kiện điện máy
+
 Phân Công
 
 Minh Tuấn: Form đăng nhập, đăng xuất, đăng ký(dùng mã hóa,phân quyền), Form màng hình chính (có các nút chức năng để mở các Form khác)
