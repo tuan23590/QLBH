@@ -11,6 +11,6 @@ package com.qlbh.qlbh;
 public class QLBH {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hello World! ok");
     }
 }
