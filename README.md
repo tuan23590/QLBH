@@ -7,3 +7,6 @@ Thanh Tuấn: Form đăng ký sản phẩm (có thêm khách hàng hoặc chọn
 Ngọc Phượng: Form tạo phiếu yêu cầu bảo hành (hiển thị thông tin sản phẩm, cho phép chọn lý do bảo hành)
 
 Thành Tâm: Form hiển thị danh sách các sản phẩm (click sản phẩm hiển thị thông của sản phẩm,khách hàng, trạng thái bảo hành và cho phép thay đổi trạng thái bảo hành, tra cứu bảo hành sản phảm)
+
+Ghi chú: mỗi người tạo 1 packge riêng, kích thước của ứng dụng minimumSize [800, 600]
+code xong nhớ commit và Push lên
