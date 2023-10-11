@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "65269313f8ca11135cda974e"
+  },
+  "NgayLap": "1/1/2000",
+  "SanPham": {
+    "TenSanPham": "SP1",
+    "LoaiSanPham": "Linh kien May lanh",
+    "SoLuong": "1"
+  },
+  "TenKhachHang": "KH A",
+  "MoTa": "NOne",
+  "TrangThai": "Tao don",
+  "NgayHenTra": "2/1/2000",
+  "GiaBaoHanh": "0",
+  "LyDoBaoHanh": "hu do y to khach quan"
+}]
