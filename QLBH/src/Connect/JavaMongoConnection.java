@@ -8,6 +8,7 @@ import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import org.bson.Document;
 
 public class JavaMongoConnection {
@@ -41,7 +42,15 @@ public class JavaMongoConnection {
             System.out.println(document.toJson());
         }
     }
-
+    public void deleteData(String collectionName, Document filter) {
+    // Chọn collection cụ thể
+    MongoCollection<Document> collection = database.getCollection(collectionName);
+    
+    // Xóa một tài liệu phù hợp với điều kiện filter (sử dụng deleteOne)
+    collection.deleteOne(filter);
+    // Hoặc bạn có thể xóa nhiều tài liệu phù hợp với điều kiện filter (sử dụng deleteMany)
+    // collection.deleteMany(filter);
+    }
     public void closeConnection() {
         // Đóng kết nối tới MongoDB
         mongoClient.close();
@@ -61,6 +70,18 @@ public class JavaMongoConnection {
 
     return jsonData.toString();
     }
+    public void updateField(String collectionName, Document filter, Document update) {
+    // Chọn collection cụ thể
+    MongoCollection<Document> collection = database.getCollection(collectionName);
+
+    // Sử dụng phương thức updateOne để sửa trường trong một tài liệu
+    collection.updateOne(filter, new Document("$set", update));
+    
+    // Hoặc bạn có thể sử dụng phương thức updateMany để sửa nhiều tài liệu phù hợp với điều kiện filter
+    // collection.updateMany(filter, new Document("$set", update));
+    }
+
+
     public static void main(String[] args) {
         JavaMongoConnection mongoDBHandler = new JavaMongoConnection();
 
