@@ -12,3 +12,6 @@ Thành Tâm: Form hiển thị danh sách các sản phẩm (click sản phẩm 
 
 Ghi chú: mỗi người tạo 1 packge riêng, kích thước của ứng dụng minimumSize [800, 600]
 code xong nhớ commit và Push lên
+
+
+visual studio 2022
