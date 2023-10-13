@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QLBH
 {
-    public partial class DangKy : Form
+    public partial class FormDangKy : Form
     {
-        public DangKy()
+        public FormDangKy()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -81,7 +81,7 @@ namespace QLBH
             MessageBox.Show("Đăng ký thành công!");
 
             this.Close();
-            DangNhap formDangNhap = new DangNhap();
+            FormDangNhap formDangNhap = new FormDangNhap();
             formDangNhap.Show();
         }
         private bool IsValidEmail(string email)

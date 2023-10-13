@@ -49,9 +49,9 @@ namespace QLBH.ThanhTuan
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Close();
-            DangNhap formDangNhap = new DangNhap();
+            FormDangNhap formDangNhap = new FormDangNhap();
             formDangNhap.Show();
+            this.Close();
         }
     }
 }

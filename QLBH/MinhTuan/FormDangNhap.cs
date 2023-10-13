@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using QLBH.Connection;
+using QLBH.ThanhTuan;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,9 @@ using System.Windows.Forms;
 
 namespace QLBH
 {
-    public partial class DangNhap : Form
+    public partial class FormDangNhap : Form
     {
-        public DangNhap()
+        public FormDangNhap()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -37,7 +38,7 @@ namespace QLBH
             if (KiemTraDangNhap(taiKhoan, matKhau))
             {
                 this.Hide(); 
-                TrangChu formTrangChu = new TrangChu();
+                FormMain formTrangChu = new FormMain();
                 formTrangChu.ShowDialog(); 
                 this.Close();
             }
@@ -59,7 +60,7 @@ namespace QLBH
 
         private void btn_dangky_Click(object sender, EventArgs e)
         {
-            DangKy formDangKy = new DangKy();
+            FormDangKy formDangKy = new FormDangKy();
             formDangKy.Show();
         }
     }

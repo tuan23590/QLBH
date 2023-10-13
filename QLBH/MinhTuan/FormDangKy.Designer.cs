@@ -1,6 +1,6 @@
 ﻿namespace QLBH
 {
-    partial class DangKy
+    partial class FormDangKy
     {
         /// <summary>
         /// Required designer variable.

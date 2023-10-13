@@ -153,17 +153,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\MongoDBConnection.cs" />
-    <Compile Include="MinhTuan\DangKy.cs">
+    <Compile Include="MinhTuan\FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MinhTuan\DangKy.Designer.cs">
-      <DependentUpon>DangKy.cs</DependentUpon>
+    <Compile Include="MinhTuan\FormDangKy.Designer.cs">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="MinhTuan\DangNhap.cs">
+    <Compile Include="MinhTuan\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MinhTuan\DangNhap.Designer.cs">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <Compile Include="MinhTuan\FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="MinhTuan\Form1.cs">
       <SubType>Form</SubType>
@@ -173,23 +173,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MinhTuan\TrangChu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MinhTuan\TrangChu.Designer.cs">
-      <DependentUpon>TrangChu.cs</DependentUpon>
-    </Compile>
     <Compile Include="MinhTuan\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MinhTuan\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MinhTuan\DangKy.resx">
-      <DependentUpon>DangKy.cs</DependentUpon>
+    <EmbeddedResource Include="MinhTuan\FormDangKy.resx">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MinhTuan\DangNhap.resx">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="MinhTuan\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MinhTuan\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -203,9 +197,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MinhTuan\TrangChu.resx">
-      <DependentUpon>TrangChu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MinhTuan\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>

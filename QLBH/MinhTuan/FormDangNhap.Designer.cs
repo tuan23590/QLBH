@@ -1,6 +1,6 @@
 ﻿namespace QLBH
 {
-    partial class DangNhap
+    partial class FormDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -73,23 +73,25 @@
             // txt_taikhoan
             // 
             this.txt_taikhoan.Location = new System.Drawing.Point(196, 141);
-            this.txt_taikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_taikhoan.Margin = new System.Windows.Forms.Padding(2);
             this.txt_taikhoan.Name = "txt_taikhoan";
             this.txt_taikhoan.Size = new System.Drawing.Size(228, 20);
             this.txt_taikhoan.TabIndex = 3;
+            this.txt_taikhoan.Text = "nv1";
             // 
             // txt_matkhau
             // 
             this.txt_matkhau.Location = new System.Drawing.Point(196, 184);
-            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(2);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(228, 20);
             this.txt_matkhau.TabIndex = 4;
+            this.txt_matkhau.Text = "123";
             // 
             // btn_login
             // 
             this.btn_login.Location = new System.Drawing.Point(156, 226);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(134, 29);
             this.btn_login.TabIndex = 5;
@@ -100,7 +102,7 @@
             // btn_dangky
             // 
             this.btn_dangky.Location = new System.Drawing.Point(305, 226);
-            this.btn_dangky.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_dangky.Margin = new System.Windows.Forms.Padding(2);
             this.btn_dangky.Name = "btn_dangky";
             this.btn_dangky.Size = new System.Drawing.Size(134, 29);
             this.btn_dangky.TabIndex = 6;
@@ -108,7 +110,7 @@
             this.btn_dangky.UseVisualStyleBackColor = true;
             this.btn_dangky.Click += new System.EventHandler(this.btn_dangky_Click);
             // 
-            // DangNhap
+            // FormDangNhap
             // 
             this.AcceptButton = this.btn_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,8 +123,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "DangNhap";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormDangNhap";
             this.Text = "DangNhap";
             this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
