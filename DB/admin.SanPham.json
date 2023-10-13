@@ -1,9 +1,0 @@
-[{
-  "_id": {
-    "$oid": "65269842f8ca11135cda9767"
-  },
-  "TenSanPham": "SP 1",
-  "LoaiSanPham": "linh kien pc",
-  "ThoiGianBaoHanh": "24 thang",
-  "KieuBaoHanh": "Bao Hanh Vang"
-}]
