@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLBH.ThanhTuan;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QLBH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap());
+            Application.Run(new DKSanPham());
         }
     }
 }
