@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QLBH.ThanhTuan
 {
-    public partial class DKSanPham : Form
+    public partial class FormMain : Form
     {
-        public DKSanPham()
+        public FormMain()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -39,12 +39,19 @@ namespace QLBH.ThanhTuan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("có cc t nè.", "Message Dialog Title", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This is a message dialog.", "Message Dialog Title", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DangNhap formDangNhap = new DangNhap();
+            formDangNhap.Show();
         }
     }
 }

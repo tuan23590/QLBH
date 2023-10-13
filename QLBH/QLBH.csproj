@@ -179,11 +179,11 @@
     <Compile Include="MinhTuan\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThanhTuan\DKSanPham.cs">
+    <Compile Include="MinhTuan\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThanhTuan\DKSanPham.Designer.cs">
-      <DependentUpon>DKSanPham.cs</DependentUpon>
+    <Compile Include="MinhTuan\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MinhTuan\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -206,8 +206,8 @@
     <EmbeddedResource Include="MinhTuan\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThanhTuan\DKSanPham.resx">
-      <DependentUpon>DKSanPham.cs</DependentUpon>
+    <EmbeddedResource Include="MinhTuan\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
@@ -230,6 +230,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ThanhTuan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.8.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.8.0\build\MongoDB.Libmongocrypt.targets')" />

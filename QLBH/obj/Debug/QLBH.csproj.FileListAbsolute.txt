@@ -56,4 +56,4 @@ C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.csproj.CoreCompi
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.csproj.CopyComplete
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.exe
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.pdb
-C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.DKSanPham.resources
+C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormMain.resources
