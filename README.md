@@ -2,7 +2,7 @@ Quản lý bảo linh kiện điện máy
 
 Phân Công
 
-Minh Tuấn: Form đăng nhập, đăng xuất, đăng ký(dùng mã hóa,phân quyền), Form màng hình chính (có các nút chức năng để mở các Form khác)
+Minh Tuấn: Form đăng nhập, đăng xuất, đăng ký, Form màng hình chính (có các nút chức năng để mở các Form khác), chuẩn bị nội dung thuyết trình
 
 Thanh Tuấn: Form đăng ký sản phẩm (có thêm khách hàng hoặc chọn khách hàng đã tồn tại ),From thêm thông tin sản phẩm,Form quản lý(Thêm, sửa, xóa sản pham, loai san pham, loai bao hanh, ly do bao hanh), check code
 
