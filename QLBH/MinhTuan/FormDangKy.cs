@@ -96,5 +96,28 @@ namespace QLBH
                 return false;
             }
         }
+
+        private void FormDangKy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát ứng dụng?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                FormDangNhap formDangNhap = new FormDangNhap();
+                formDangNhap.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDangNhap formDangNhap = new FormDangNhap();
+            formDangNhap.Show();
+            this.Hide();
+        }
     }
 }

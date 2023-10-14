@@ -37,9 +37,9 @@ namespace QLBH
 
             if (KiemTraDangNhap(taiKhoan, matKhau))
             {
-                this.Hide(); 
+                this.Hide();
                 FormMain formTrangChu = new FormMain();
-                formTrangChu.ShowDialog(); 
+                formTrangChu.ShowDialog();
                 this.Close();
             }
             else
@@ -47,7 +47,7 @@ namespace QLBH
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu. Vui lòng thử lại.");
             }
         }
-            private static bool KiemTraDangNhap(string taiKhoan, string matKhau)
+        private static bool KiemTraDangNhap(string taiKhoan, string matKhau)
         {
             var dbConnection = new MongoDBConnection();
             string collectionName = "NhanVien";
@@ -62,6 +62,18 @@ namespace QLBH
         {
             FormDangKy formDangKy = new FormDangKy();
             formDangKy.Show();
+            this.Hide();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát ứng dụng?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

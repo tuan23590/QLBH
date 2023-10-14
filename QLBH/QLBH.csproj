@@ -196,6 +196,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="MinhTuan\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -221,6 +222,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <Content Include="Resources\1612759368397.jpg" />
+    <None Include="Resources\QUAN LY BAO HANH %281%291.png" />
+    <None Include="Resources\16127593683971.jpg" />
+    <Content Include="Resources\aaaa.png" />
+    <None Include="Resources\aaaa1.png" />
+    <Content Include="Resources\QUAN LY BAO HANH %281%29.png" />
+    <None Include="Resources\QUAN LY BAO HANH.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ThanhTuan\" />
