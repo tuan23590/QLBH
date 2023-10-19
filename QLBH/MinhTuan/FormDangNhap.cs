@@ -75,5 +75,10 @@ namespace QLBH
                 Application.Exit();
             }
         }
+
+        private void txt_taikhoan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

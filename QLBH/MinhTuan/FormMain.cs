@@ -76,5 +76,9 @@ namespace QLBH.ThanhTuan
             this.Hide();
         }
 
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

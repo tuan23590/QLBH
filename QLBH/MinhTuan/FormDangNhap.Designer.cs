@@ -82,6 +82,7 @@
             this.txt_taikhoan.Size = new System.Drawing.Size(303, 22);
             this.txt_taikhoan.TabIndex = 3;
             this.txt_taikhoan.Text = "nv1";
+            this.txt_taikhoan.TextChanged += new System.EventHandler(this.txt_taikhoan_TextChanged);
             // 
             // txt_matkhau
             // 

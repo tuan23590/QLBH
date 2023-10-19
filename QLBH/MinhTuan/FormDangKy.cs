@@ -119,5 +119,10 @@ namespace QLBH
             formDangNhap.Show();
             this.Hide();
         }
+
+        private void FormDangKy_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

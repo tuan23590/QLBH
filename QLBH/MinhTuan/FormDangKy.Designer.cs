@@ -269,6 +269,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDangKy";
             this.Text = "DangKy";
+            this.Load += new System.EventHandler(this.FormDangKy_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

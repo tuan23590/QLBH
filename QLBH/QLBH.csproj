@@ -179,6 +179,24 @@
     <Compile Include="MinhTuan\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThanhTam\frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhTam\frmSanPham.Designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhTam\frmSanPham_AD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhTam\frmSanPham_AD.Designer.cs">
+      <DependentUpon>frmSanPham_AD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhTam\frmTraCuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhTam\frmTraCuu.Designer.cs">
+      <DependentUpon>frmTraCuu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MinhTuan\FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,16 +208,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="MinhTuan\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhTam\frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhTam\frmSanPham_AD.resx">
+      <DependentUpon>frmSanPham_AD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhTam\frmTraCuu.resx">
+      <DependentUpon>frmTraCuu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
@@ -221,6 +242,10 @@
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Image_icon\button_sua.png" />
+    <Content Include="Image_icon\button_them.png" />
+    <Content Include="Image_icon\button_timkiem.jpg" />
+    <Content Include="Image_icon\button_xoa.jpg" />
     <Content Include="mongocrypt.dll" />
     <Content Include="Resources\1612759368397.jpg" />
     <None Include="Resources\QUAN LY BAO HANH %281%291.png" />
