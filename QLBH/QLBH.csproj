@@ -200,11 +200,17 @@
     <Compile Include="ThanhTuan\FormThemSP.Designer.cs">
       <DependentUpon>FormThemSP.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThanhTuan\FormTongPhieuBH.cs">
+    <Compile Include="ThanhTuan\FormTongKHMua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThanhTuan\FormTongPhieuBH.Designer.cs">
-      <DependentUpon>FormTongPhieuBH.cs</DependentUpon>
+    <Compile Include="ThanhTuan\FormTongKHMua.Designer.cs">
+      <DependentUpon>FormTongKHMua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhTuan\FormTongPhieuBaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhTuan\FormTongPhieuBaoHanh.Designer.cs">
+      <DependentUpon>FormTongPhieuBaoHanh.cs</DependentUpon>
     </Compile>
     <Compile Include="ThanhTuan\SanPhamInfo.cs" />
     <EmbeddedResource Include="MinhTuan\FormDangKy.resx">
@@ -238,8 +244,11 @@
     <EmbeddedResource Include="ThanhTuan\FormThemSP.resx">
       <DependentUpon>FormThemSP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThanhTuan\FormTongPhieuBH.resx">
-      <DependentUpon>FormTongPhieuBH.cs</DependentUpon>
+    <EmbeddedResource Include="ThanhTuan\FormTongKHMua.resx">
+      <DependentUpon>FormTongKHMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhTuan\FormTongPhieuBaoHanh.resx">
+      <DependentUpon>FormTongPhieuBaoHanh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />

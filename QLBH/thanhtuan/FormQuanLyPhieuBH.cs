@@ -56,10 +56,17 @@ namespace QLBH.ThanhTuan
             {
                 string tenSP = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 object cellValue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-                if(e.ColumnIndex == 4)
-                    MessageBox.Show("Giá trị ô: tong mua" );
+                if (e.ColumnIndex == 4)
+                {
+                    
+                    FormTongKHMua formTongPhieuBH = new FormTongKHMua(tenSP);
+                    formTongPhieuBH.ShowDialog();
+                }    
                 if (e.ColumnIndex == 5)
-                    MessageBox.Show("Giá trị ô: tong pheiue" );
+                {
+                    FormTongPhieuBaoHanh formTongPhieuBaoHanh = new FormTongPhieuBaoHanh(tenSP);
+                    formTongPhieuBaoHanh.ShowDialog();  
+                }    
 
 
             }

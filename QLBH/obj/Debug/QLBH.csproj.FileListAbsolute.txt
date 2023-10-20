@@ -175,4 +175,5 @@ C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormTh
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormQuanLyPhieuBH.resources
-C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormTongPhieuBH.resources
+C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormTongKHMua.resources
+C:\Users\Tuan\Desktop\Quan_Ly_Bao_Hanh\QLBH\QLBH\obj\Debug\QLBH.ThanhTuan.FormTongPhieuBaoHanh.resources

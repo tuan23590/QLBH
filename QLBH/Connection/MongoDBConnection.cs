@@ -234,5 +234,70 @@ namespace QLBH.Connection
 
             MessageBox.Show("Dữ liệu đã được cập nhật!");
         }
+        public List<List<string>> LayThongTinBaoHanhTheoTenSP(string tenSP)
+        {
+            IMongoCollection<BsonDocument> collection = _database.GetCollection<BsonDocument>("sp");
+            var filter = Builders<BsonDocument>.Filter.Eq("TenSP", tenSP);
+            var results = collection.Find(filter).ToList();
+            List<List<string>> resultMatrix = new List<List<string>>();
+            foreach (var result in results)
+            {
+                if (result.Contains("BaoHanh") && result["BaoHanh"].IsBsonArray)
+                {
+                    var baoHanhArray = result["BaoHanh"].AsBsonArray;
+
+                    foreach (var baoHanh in baoHanhArray)
+                    {
+                        string tenKH = baoHanh["TenKH"].AsString;
+                        string email = baoHanh["Email"].AsString;
+                        string sdt = baoHanh["SDT"].AsString;
+                        string ngayMua = baoHanh["NgayMua"].AsString;
+                        string diaChi = $"{baoHanh["DiaChi"]["TP"].AsString}, {baoHanh["DiaChi"]["Quan"].AsString}, {baoHanh["DiaChi"]["Phuong"].AsString}, {baoHanh["DiaChi"]["SoNhaTenDuong"].AsString}";
+                        List<string> row = new List<string> { tenKH, email, sdt, ngayMua, diaChi };
+                        resultMatrix.Add(row);
+                    }
+                }
+            }
+
+            return resultMatrix;
+        }
+        public List<List<string>> LayDanhSachBaoHanhTheoTenSP(string tenSP)
+        {
+            IMongoCollection<BsonDocument> collection = _database.GetCollection<BsonDocument>("sp");
+
+            var filter = Builders<BsonDocument>.Filter.Eq("TenSP", tenSP);
+
+            var results = collection.Find(filter).ToList();
+            List<List<string>> resultMatrix = new List<List<string>>();
+            foreach (var result in results)
+            {
+                if (result.Contains("BaoHanh") && result["BaoHanh"].IsBsonArray)
+                {
+                    var baoHanhArray = result["BaoHanh"].AsBsonArray;
+
+                    try
+                    {
+                        foreach (var baoHanh in baoHanhArray)
+                        {
+                            string loaiBaoHanh = baoHanh["LoaiBaoHanh"].AsString;
+                            string moTa = baoHanh["MoTa"].AsString;
+                            string thoiGianTaoBH = baoHanh["ThoiGianTaoBH"].AsString;
+                            string thoiGianTraBH = baoHanh["ThoiGianTraBH"].AsString;
+                            string chiPhi = baoHanh["ChiPhi"].AsString;
+
+                            List<string> row = new List<string> { tenSP, loaiBaoHanh, moTa, thoiGianTaoBH, thoiGianTraBH, chiPhi };
+                            resultMatrix.Add(row);
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                        return null;
+                    }
+                }
+            }
+
+            return resultMatrix;
+        }
     }
 }
