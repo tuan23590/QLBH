@@ -59,7 +59,7 @@ namespace QLBH
 
             var dbClient = new MongoClient("mongodb://localhost:27017");
             var database = dbClient.GetDatabase("QLBH");
-            var collection = database.GetCollection<BsonDocument>("NhanVien");
+            var collection = database.GetCollection<BsonDocument>("sp");
 
             var nhanVien = new BsonDocument
         {

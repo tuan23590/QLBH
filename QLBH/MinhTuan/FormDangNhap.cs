@@ -50,7 +50,7 @@ namespace QLBH
         private static bool KiemTraDangNhap(string taiKhoan, string matKhau)
         {
             var dbConnection = new MongoDBConnection();
-            string collectionName = "NhanVien";
+            string collectionName = "sp";
 
             var filter = Builders<BsonDocument>.Filter.Eq("TaiKhoan.TenDangNhap", taiKhoan) & Builders<BsonDocument>.Filter.Eq("TaiKhoan.MatKhau", matKhau);
             var result = dbConnection.Search(collectionName, filter);
