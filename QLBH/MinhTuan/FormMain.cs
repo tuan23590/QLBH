@@ -29,7 +29,7 @@ namespace QLBH.ThanhTuan
         private void button1_Click_1(object sender, EventArgs e)
         {
             flowLayoutPanel2.Controls.Clear();
-            Form1 formToDisplay = new Form1();
+            FormQuanLyPhieuBH formToDisplay = new FormQuanLyPhieuBH();
             formToDisplay.TopLevel = false;
             formToDisplay.FormBorderStyle = FormBorderStyle.None; // Tắt viền Form (nếu bạn muốn)
             flowLayoutPanel2.Controls.Add(formToDisplay);
@@ -69,8 +69,8 @@ namespace QLBH.ThanhTuan
 
         private void button6_Click(object sender, EventArgs e)
         {
-            FormMain formTrangChu = new FormMain();
-            formTrangChu.Show();
+            flowLayoutPanel2.Controls.Clear();
+           
         }
 
       //

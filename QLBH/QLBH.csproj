@@ -200,6 +200,13 @@
     <Compile Include="ThanhTuan\FormThemSP.Designer.cs">
       <DependentUpon>FormThemSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThanhTuan\FormTongPhieuBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhTuan\FormTongPhieuBH.Designer.cs">
+      <DependentUpon>FormTongPhieuBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhTuan\SanPhamInfo.cs" />
     <EmbeddedResource Include="MinhTuan\FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThanhTuan\FormThemSP.resx">
       <DependentUpon>FormThemSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhTuan\FormTongPhieuBH.resx">
+      <DependentUpon>FormTongPhieuBH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />

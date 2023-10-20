@@ -44,6 +44,7 @@ namespace QLBH.ThanhTuan
             string namSX = numericUpDown2.Value.ToString();
 
             mongoDBConnection.ThemSanPham(tenSP, phanLoai, thoiGianBaoHanh, namSX);
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,7 +52,10 @@ namespace QLBH.ThanhTuan
             string vanBanMoi = comboBox1.Text; // Lấy dòng văn bản từ TextBox
 
             if (!string.IsNullOrWhiteSpace(vanBanMoi))
+            {
                 listBox1.Items.Add(vanBanMoi); // Thêm dòng văn bản vào ListBox
+                comboBox1.Text = "";
+            }     
             else
             {
                 MessageBox.Show("Vui lòng nhập dòng văn bản trước khi thêm.");

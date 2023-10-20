@@ -8,6 +8,8 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
+using System.Data;
+using QLBH.ThanhTuan;
 
 namespace QLBH.Connection
 {
@@ -139,16 +141,16 @@ namespace QLBH.Connection
         {
             IMongoCollection<BsonDocument> collection = _database.GetCollection<BsonDocument>("sp");
 
-            // Tạo một bộ lọc trống để lấy tất cả tài liệu
+
             var filter = Builders<BsonDocument>.Filter.Empty;
 
-            // Sử dụng Find để truy vấn collection với bộ lọc
+
             var results = collection.Find(filter).ToList();
 
-            // Tạo danh sách TenKH
+
             List<string> danhSachTenKH = new List<string>();
 
-            // Lặp qua tất cả tài liệu và lấy giá trị TenKH
+
             foreach (var result in results)
             {
                 if (result.Contains("BaoHanh") && result["BaoHanh"].IsBsonArray)
@@ -166,6 +168,71 @@ namespace QLBH.Connection
             }
 
             return danhSachTenKH;
+        }
+        public List<List<string>> LayThongTinTheoPhanLoai(string phanLoai)
+        {
+            IMongoCollection<BsonDocument> collection = _database.GetCollection<BsonDocument>("sp");
+
+
+            var filter = Builders<BsonDocument>.Filter.Eq("PhanLoai", phanLoai);
+
+
+            var results = collection.Find(filter).ToList();
+
+
+            List<List<string>> resultMatrix = new List<List<string>>();
+
+
+            foreach (var result in results)
+            {
+                List<string> row = new List<string>
+            {
+                result["TenSP"].AsString,
+                result["PhanLoai"][0].AsString,
+                result["ThoiGianBaoHanh"].AsString,
+                result["NamSX"].AsString
+            };
+                try
+                {
+                    int baoHanhCount = result["BaoHanh"].AsBsonArray.Count;
+                    row.Add(baoHanhCount.ToString());
+                }
+                catch (Exception ex)
+                {
+                    row.Add("0");
+                }
+                try
+                {
+                    int traBHCount = result["BaoHanh"].AsBsonArray.Count(bh => !string.IsNullOrEmpty(bh["ThoiGianTraBH"].AsString));
+                    row.Add(traBHCount.ToString());
+                }
+                catch (Exception ex)
+                {
+                    row.Add("0");
+                }
+
+                resultMatrix.Add(row);
+            }
+
+            return resultMatrix;
+        }
+        public void CapNhatDuLieuTheoTenSP(string tenSP, string thoiGianBaoHanh, string namSX)
+        {
+            IMongoCollection<BsonDocument> collection = _database.GetCollection<BsonDocument>("sp");
+
+            var filter = Builders<BsonDocument>.Filter.Eq("TenSP", tenSP);
+
+            BsonDocument updateDoc = new BsonDocument
+            {
+                { "ThoiGianBaoHanh", thoiGianBaoHanh },
+                { "NamSX", namSX }
+            };
+            var update = Builders<BsonDocument>.Update.Set("ThoiGianBaoHanh", updateDoc["ThoiGianBaoHanh"])
+                                                      .Set("NamSX", updateDoc["NamSX"]);
+
+            collection.UpdateOne(filter, update);
+
+            MessageBox.Show("Dữ liệu đã được cập nhật!");
         }
     }
 }
